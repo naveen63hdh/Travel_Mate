@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingStart="5dp"
+            android:paddingBottom="5dp"
+            android:paddingEnd="1dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Destination Location : "/>
+
+
+                <TextView
+                    android:id="@+id/destText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:ems="12"
+                    android:hint="Selected Destination Location"
+                    android:completionThreshold="1"
+                    android:padding="5dp" >
+
+                </TextView>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/div"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="Set Alarm mode" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/mileRadioBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorAccent"
+                    android:text="Milestone" />
+
+                <RadioButton
+                    android:id="@+id/stopRadioBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorAccent"
+                    android:text="Previous Stops" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/alarmBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set Alarm"
+        android:background="@color/colorAccent"
+        android:textColor="#000000" />
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "570017499834",
+    "firebase_url": "https://travel-mate-d4fcd.firebaseio.com",
+    "project_id": "travel-mate-d4fcd",
+    "storage_bucket": "travel-mate-d4fcd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570017499834:android:779e22692dc448ede01083",
+        "android_client_info": {
+          "package_name": "com.example.pavinaveen.map"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "570017499834-sq39sejmci4lo3ihvll8od672t9qltd4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT0ApVaI_uQ6JUIuaDq0eVQ4ueQlidSCc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "570017499834-sq39sejmci4lo3ihvll8od672t9qltd4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

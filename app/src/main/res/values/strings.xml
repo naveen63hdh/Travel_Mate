@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Travel Mate</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="gotmytrip_password">Password</string>
+    <string name="phonenumber">Phone Number</string>
+    <string name="sigup"><u>Create new Account</u></string>
+    <string name="username">User Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password">Password</string>
+    <string name="Register_btn">Register</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="email_address">Email Address</string>
+    <string name="terms_and_conditions"><u>Terms And Conditions</u></string>
+    <string name="autocompletion_help">Destination Location</string>
+</resources>

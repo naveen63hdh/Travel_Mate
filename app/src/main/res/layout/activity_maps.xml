@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:cardBackgroundColor="@color/colorAccent"
+        app:contentPaddingLeft="10dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="22sp"
+            android:textColor="#000000"
+            android:text="@string/app_name"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:paddingStart="5dp"
+                android:paddingBottom="5dp"
+                android:paddingEnd="1dp"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="5dp"
+                    android:orientation="horizontal">
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:ems="12"
+                    android:completionThreshold="1"
+                    android:hint="@string/autocompletion_help"
+                    android:padding="5dp" >
+
+                </AutoCompleteTextView>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/cross"
+                        android:onClick="txtClear"
+                        android:background="@color/colorAccent"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/clrBtn"
+                        android:foregroundGravity="center"
+                        android:layout_alignParentEnd="true"
+
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+<!--                <View-->
+<!--                    android:id="@+id/div"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:background="?android:attr/listDivider" />-->
+<!--                <TextView-->
+<!--                    android:id="@+id/textView7"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:paddingTop="10dp"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:text="Set Alarm by" />-->
+
+<!--                <RadioGroup-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <RadioButton-->
+<!--                        android:id="@+id/radioButton3"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Milestone" />-->
+
+<!--                    <RadioButton-->
+<!--                        android:id="@+id/radioButton2"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Previous Stops" />-->
+<!--                </RadioGroup>-->
+
+<!--            </LinearLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="?android:attr/listDivider" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Set Destination"
+                android:onClick="setAlarm"
+                android:background="@color/colorAccent"
+                android:textColor="#000000" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:padding="20dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distance : "/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/distTxt"
+            android:text="0.0KM"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
