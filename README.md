@@ -1,4 +1,4 @@
-# Travel_Mate
+# Travel Mate
 ## Android Application for bus travel assistance
 Android based application designed for passengers who travel in bus. This project is used to alert the traveler before the destination. The application has the facility of tracking and notifying the live location. 
 ## Screenshots
